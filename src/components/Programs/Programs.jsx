@@ -13,11 +13,11 @@ const Programs = () => {
       </div>
 
       <div className="program-categories">
-        {programsData.map((e) => (
+        {programsData.map((program) => (
           <div className="category">
-            {e.image}
-            <span>{e.heading}</span>
-            <span>{e.details}</span>
+            {program.image}
+            <span>{program.heading}</span>
+            <span>{program.details}</span>
             <div className="join-now">
               <span>Join Now</span>
               <img src={RightArrow} alt="" />
