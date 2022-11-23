@@ -37,6 +37,15 @@ const Footer = () => {
           <img src={Logo} alt="" />
         </div>
       </div>
+
+      <div
+        className="blur blur-f-1"
+        style={{ filter: "blur(200px)", background: "red" }}
+      />
+      <div
+        className="blur blur-f-2"
+        style={{ filter: "blur(200px)", background: "rgb(255, 115, 0)" }}
+      />
     </div>
   );
 };
