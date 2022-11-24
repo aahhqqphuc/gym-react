@@ -9,9 +9,10 @@ import Calories from "../../assets/calories.png";
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
+  const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur hero-blur" />
 
       <div className="left-h">
@@ -19,7 +20,7 @@ const Hero = () => {
 
         <div className="the-best-ad">
           <motion.div
-            initial={{ left: "238px" }}
+            initial={{ left: mobile ? "165px" : "238px" }}
             whileInView={{ left: "9px" }}
             transition={{ ...transition, type: "tween" }}
           ></motion.div>
@@ -44,15 +45,15 @@ const Hero = () => {
 
         <div className="figures">
           <div>
-            <span>+ 140</span>
+            <span>+140</span>
             <span>expert coaches</span>
           </div>
           <div>
-            <span>+ 978</span>
+            <span>+978</span>
             <span>member joined</span>
           </div>
           <div>
-            <span>+ 50</span>
+            <span>+50</span>
             <span>fitness programs</span>
           </div>
         </div>

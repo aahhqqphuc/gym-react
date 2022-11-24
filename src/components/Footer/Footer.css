@@ -48,3 +48,12 @@
   filter: blur(200px);
   background: rgb(255, 115, 0);
 }
+
+@media screen and (max-width: 768px) {
+  .Footer-container {
+    margin-top: -4rem;
+  }
+  .footer {
+    margin: -4rem;
+  }
+}
